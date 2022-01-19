@@ -1,11 +1,50 @@
-﻿// Zadanie 1.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
+// Zadanie 1.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
 //
 
 #include <iostream>
+# include <iostream>
+using namespace std;
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+
+    char op;
+    float num1, num2;
+
+    cout << "Enter operator: +, -, *, /: ";
+    cin >> op;
+
+    cout << "Enter two operands: ";
+    cin >> num1 >> num2;
+
+    switch (op) {
+
+    case '+'://addition
+        cout << num1 << " + " << num2 << " = " << num1 + num2;
+        break;
+
+
+    case '-'://subtraction
+        cout << num1 << " - " << num2 << " = " << num1 - num2;
+        break;
+
+
+    case '*'://multiplication
+        cout << num1 << " * " << num2 << " = " << num1 * num2;
+        break;
+
+
+    case '/'://Division
+        cout << num1 << " / " << num2 << " = " << num1 / num2;
+        break;
+
+
+    default:
+        // If the operator is wrong an error message is shown
+        cout << "Error! operator is not correct";
+        break;
+    }
+
+    return 0;
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
