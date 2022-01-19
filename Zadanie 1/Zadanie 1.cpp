@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-# include <iostream>
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -10,11 +10,13 @@ int main() {
     char op;
     float num1, num2;
 
-    cout << "Enter operator: +, -, *, /: ";
+    cout << "wybierz typ działania : +, -, *, /: ";
     cin >> op;
 
-    cout << "Enter two operands: ";
-    cin >> num1 >> num2;
+    cout << "Podaj liczbe nr1 ";
+    cin >> num1;
+    cout << "Podaj liczbe nr2 ";
+    cin >> num2;
 
     switch (op) {
 
@@ -40,7 +42,7 @@ int main() {
 
     default:
         // If the operator is wrong an error message is shown
-        cout << "Error! operator is not correct";
+        cout << "podany zly typ dzialania";
         break;
     }
 
